@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div style="background-color:cornsilk; margin-top: 30px; margin-left:200px; margin-right: 200px; padding: 30px;">
+        <center><h1>Kontakta oss</h1>
+        <a style="font-size: large;" href="index.html">Startsida</a>&emsp;
+        <a style="font-size: large;" href="products.html">Produkter</a>&emsp;
+        <a style="font-size: large;" href="contact.html">Kontakt</a>&emsp;
+        <a style="font-size: large;" href="aboutus.html">Om oss</a>&emsp;
+        <a style="font-size: large;" href="media.html">Filmer</a>&emsp;</center>
+        <br>
+        <br>
+        <br>
+        <form action="http://primat.se/services/sendform.aspx?xid=register&xmail=elb@mail.com" method="post">
+            <label for="name">Namn</label><br>
+            <input id="name" name="name" type="text"><br>
+            <label for="adress">Adress</label><br>
+            <input id="adress" name="adress" type="text"><br>
+            <label for="email">Email</label><br>
+            <input id="email" name="email" type="email"><br>
+            <label for="telnr">Telefon</label><br>
+            <input id="telnr" name="telnr" type="tel">
+
+
+            <p>Privat eller företag:</p>
+            <input type="radio" name="privorcomp" id="priv" value="privatperson">
+            <label for="meat">Privat</label><br>
+            <input type="radio" name="privorcomp" id="comp" value="foretag">
+            <label for="comp">Företag</label><br>
+            <br>
+            <p>Storlek på företaget:</p>
+            <input type="radio" name="compsize" id="small" value="small">
+            <label for="meat">1-100 anställda</label><br>
+            <input type="radio" name="compsize" id="med" value="medium">
+            <label for="med">101-1000 anställda</label><br>
+            <input type="radio" name="compsize" id="big" value="big">
+            <label for="big">mer än 1000 anställda</label><br>
+            <br>
+            <label for="question">Skriv din fråga här:</label><br>
+            <textarea id="question" name="question" rows="5" cols="50"></textarea>
+
+            <br>
+            <br>
+            <input type="hidden" name="newsletter" value="nej">
+            <input type="checkbox" id="newsletter" name="newsletter" value="ja">
+            <label for="newsletter">Vill du ha nyhetsbrev?</label>
+            <br>
+            <input type="hidden" name="phonecontact" value="nej">
+            <input type="checkbox" id="phonecontact" name="phonecontact" value="ja">
+            <label for="newsletter">Vill du bli kontaktad på telefon?</label>
+            <br>
+            <br>
+            <input type="submit" value="Skicka">
+        </form>
+    </div>
+    <center>
+    <iframe src="contactiframe.html" width="700" height="200" style="border: none;"></iframe></center>
+</body>
+
+</html>
