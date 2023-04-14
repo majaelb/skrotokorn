@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skrot & Korn | Kontakt</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <!-- Header content -->
+            <div class="search">
+                <input id="adress" name="adress" type="text"><input type="button" value="SÖK"></input>
+            </div>
+            <h1 class="companyname companyname-large">SKROT & KORN AB</h1>
+        </header>
+
+        <nav>
+            <!-- Navigation -->
+            <ul id="menu">
+            </ul>
+        </nav>
+
+        <main>
+            <h2 class="section-header">KONTAKT</h2>
+
+            <p class="contact-infotext">Välkommen att kontakta oss om du har några frågor. <br>Använd formuläret nedan eller kontakta oss direkt via mail
+                <a href="mailto:info@skrotokorn.se">info@skrotokorn.se</a> eller telefon 070-547 96 14</p>
+                 
+             <div class="myflex-container">
+                 <div class="map-navigation">
+                     <h3 class="flex-header">VÄGBESKRIVNING</h3>
+                     <br>
+                         <!--<div class="mapouter">-->
+                            <!-- <div class="gmap_canvas">-->
+                                 <iframe   id="gmap_canvas"
+                                     src="https://maps.google.com/maps?q=Övre Jäder 1 Jönåker Sverige&t=&z=11&ie=UTF8&iwloc=&output=embed"
+                                     ></iframe>
+                                     <!-- frameborder="0" scrolling="no" marginheight="0" marginwidth="0"> -->
+                             <!--</div>-->
+                         <!--</div>-->
+                 </div>
+                 <div class="contact-form">
+                     <h3 class="flex-header">KONTAKTA OSS</h3>
+                     
+                     <form action="http://primat.se/services/sendform.aspx?xid=register&xmail=elb@mail.com" method="post">
+                        <label for="name">Namn</label><br>
+                        <input class="inputform" id="name" name="name" type="text"><br>
+                        <label for="adress">Adress</label><br>
+                        <input class="inputform" id="adress" name="adress" type="text"><br>
+                        <label for="email">Email</label><br>
+                        <input class="inputform" id="email" name="email" type="email"><br>
+                        <label for="telnr">Telefon</label><br>
+                        <input class="inputform" id="telnr" name="telnr" type="tel">
+            
+            
+                        <p>Privat eller företag:</p>
+                        <input type="radio" name="privorcomp" id="priv" value="privatperson">
+                        <label for="meat">Privat</label><br>
+                        <input type="radio" name="privorcomp" id="comp" value="foretag">
+                        <label for="comp">Företag</label><br>
+                        <br>
+                        <p>Storlek på företaget:</p>
+                        <input type="radio" name="compsize" id="small" value="small">
+                        <label for="meat">1-100 anställda</label><br>
+                        <input type="radio" name="compsize" id="med" value="medium">
+                        <label for="med">101-1000 anställda</label><br>
+                        <input type="radio" name="compsize" id="big" value="big">
+                        <label for="big">mer än 1000 anställda</label><br>
+                        <br>
+                        <label for="question">Skriv din fråga här:</label><br>
+                        <textarea class="inputform" id="question" name="question" rows="5" cols="50"></textarea>
+            
+                        <br>
+                        <br>
+                        <input type="hidden" name="newsletter" value="nej">
+                        <input type="checkbox" id="newsletter" name="newsletter" value="ja">
+                        <label for="newsletter">Vill du ha nyhetsbrev?</label>
+                        <br>
+                        <input type="hidden" name="phonecontact" value="nej">
+                        <input type="checkbox" id="phonecontact" name="phonecontact" value="ja">
+                        <label for="newsletter">Vill du bli kontaktad på telefon?</label>
+                        <br>
+                        <br>
+                        <input class="sendbtn" type="submit" value="SKICKA">
+                         
+                     </form>
+                 </div>
+     
+             </div>
+        </main>
+
+        <aside>
+            <!-- Sidebar / Ads -->
+            Här hittar du lite annonser och annat tjafs<br>
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        </aside>
+
+        <footer>
+            <h3 class="footer-information">Skrot & Korn AB</h3>
+            <p class="footer-information">Företagsvägen 5, 61163 Nyköping <br><br> 070-547 96 14</p>
+            <p class="footer-copyright">Copyright: Skrot & Korn Ab 2023</p>
+    </footer>
+
+    </footer>
+    </div>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
